@@ -1,21 +1,18 @@
 SampleApp::Application.routes.draw do
-  # get "pages/home"
+    # get "users/new"
 
-  # get "pages/contact"
-
-  # get "pages/about"
-
-  # match 'pages/contact', :to => 'pages#contact'
-  # match 'pages/about',   :to => 'pages#about'
-  # match 'pages/help',    :to => 'pages#help'
-  # root :to => 'pages#home'
-
-   match 'contact' => 'pages#contact'
+    resources :users
+    match '/signup',  :to => 'users#new'
+    match 'contact' => 'pages#contact'
     match 'about' => 'pages#about'
     match 'help' => 'pages#help'
+    #---- Les 2 instructions pour redireger vers la page home
+    match 'pages' => 'pages#home'
+    # root  :to => 'pages#index'
 
+    root  :to => 'pages#home'
     
-    root :to => 'pages#home'
+   
     
 
   # The priority is based upon order of creation:

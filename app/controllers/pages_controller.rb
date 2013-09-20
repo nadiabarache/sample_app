@@ -1,7 +1,9 @@
 class PagesController < ApplicationController
   #le controller Pages avec le titre suivant la page @titre
 
-
+def index
+  @titre ="Accueil"
+end
 
 
   def home
