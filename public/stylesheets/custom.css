@@ -96,3 +96,18 @@ td.sidebar{
 	background-color: #CBD174;
 	border-radius :5px;
 }
+
+div.field, div.action {
+	margin-bottom: 10px;
+
+}
+div.action f{
+	border-radius: 5px
+}
+p{
+	color: #cc0000;
+}
+
+#error_explanation ul li {
+	color: #cc3333
+}
