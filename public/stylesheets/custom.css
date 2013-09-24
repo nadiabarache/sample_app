@@ -77,3 +77,22 @@ footer nav {
 	padding-top: 5px;
 	float:none;
 }
+
+/*user show page*/
+
+table.profile {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+td.main{
+	width: 80%;
+	padding: 1em;
+}
+td.sidebar{
+	width: 30%;
+	padding: 1em;
+	vertical-align: top;
+	background-color: #CBD174;
+	border-radius :5px;
+}

@@ -5,8 +5,9 @@ class UsersController < ApplicationController
   	@titre ="Inscription"
   end
   def show 
-
+     # trouver les utilisateurs avec leur id
   	 @user =User.find(params[:id])
+     @titre =@user.nom
   end
   def index
   end
